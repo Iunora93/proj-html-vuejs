@@ -4,8 +4,8 @@ import SectionTreatments from "./SectionTreatments.vue";
 export default {
   name: 'AppMain',
   components:{
-    SectionTreatments,
-  }
+    SectionTreatments,  
+  },  
 }
 </script>
 
@@ -71,7 +71,10 @@ export default {
     font-size: 12px;
   }
   button{
-    margin: 20px 30% 20px 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border: none;
     border: 2px solid #b9afa1;
     padding: 15px 30px;
@@ -79,13 +82,16 @@ export default {
     background-color: white;
     color: #b9afa1;                   
     font-size: 16px;
-    
+    &:hover{
+        
+        border-color: #33a7b9;
+      }
     a{
       text-decoration: none;
       color: #b9afa1;
       &:hover{
         color:  #33a7b9;
-        border-color: #33a7b9;
+        
       }
     }   
   }
