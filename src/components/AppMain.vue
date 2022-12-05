@@ -1,10 +1,12 @@
 <script>
 import SectionTreatments from "./SectionTreatments.vue";
+import SectionCard from "./SectionCard.vue";
 
 export default {
   name: 'AppMain',
   components:{
-    SectionTreatments,  
+    SectionTreatments, 
+    SectionCard,
   },  
 }
 </script>
@@ -41,6 +43,14 @@ export default {
     </div>
   </div>
   <SectionTreatments />
+  <div class="bottom-treatments">
+    <h1>OUR TREATMENTS</h1>
+  </div>
+  <SectionCard />
+  <div class="bottom-treatments">
+    <h1>Take</h1>
+  </div>
+  
 </template>
 
 <style lang="scss" scoped>
@@ -117,5 +127,11 @@ export default {
       color: #6f727b;
     }
   }
+}
+.bottom-treatments{
+  background-image: url(../assets/imgSpa/ptb_cta-new.jpg);
+  padding: 50px;
+  color: white;
+  text-align: center;
 }
 </style>
