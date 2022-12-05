@@ -82,6 +82,9 @@ header {
       i{
         margin: auto;
         color: #b9afa1;
+          &:hover{
+            color: #33a7b9;
+          }
       }
       h6{
         color: #c0c1c5;
