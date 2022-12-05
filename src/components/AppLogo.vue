@@ -16,5 +16,6 @@ export default {
     img{
     height: 25px;
     width: auto;
+    margin: auto;
     }
 </style>

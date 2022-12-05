@@ -18,7 +18,7 @@ export default {
     <AppHeader />
   </div>
   <div class="container-small">
-    <AppHeader />
+    container small app vue
   </div>
   <AppMain />
   <AppFooter />

@@ -10,19 +10,27 @@ export default {
       links: [
         {
           href: "#",
-          label: "Home",
-          info: 'face and body',
+          label: "TREATMENTS",
+          info: 'Face & body',
         },
         {
           href: "#",
-          label: "Prodotti",
-          info: 'face and body',
+          label: "ABOUT",
+          info: 'Our Team',
+        },
+             
+      ],
+      lists: [
+        {
+          href: "#",
+          label: "JOURNAL",
+          info: 'Tips & Tricks',
         },
         {
           href: "#",
-          label: "Chi Siamo",
-          info: 'face and body',
-        },       
+          label: "BOOK NOW",
+          info: 'Special Offers',
+        },   
       ],
     };
   },
@@ -30,23 +38,22 @@ export default {
 </script>
 
 <template>
-  <header class="container">
-    
+  <header class="container">   
     <nav class="main-nav">
       <ul>
-        
-        <li v-for="(item, index) in links">
-          <i class="fa-solid fa-house-chimney"></i>
+        <i class="fa-solid fa-house-chimney"></i>
+        <li v-for="(item, index) in links">          
           <a :href="item.href">{{ item.label }}</a>
-          <small>{{item.info}}</small>
+          <h6>{{item.info}}</h6>
         </li>
       </ul>
       <AppLogo />
       <ul>
-        <li v-for="(item, index) in links">
+        <li v-for="(item, index) in lists">
           <a :href="item.href">{{ item.label }}</a>
-          <small>{{item.info}}</small>
+          <h6>{{item.info}}</h6>
         </li>
+        <i class="fa-solid fa-plus"></i>
       </ul>
     </nav>
   </header>
@@ -56,18 +63,28 @@ export default {
 header {
   text-align: center;
   margin-bottom: 3.125rem;
+  padding: 50px;
+  
   .main-nav {
     display: flex;
+    
     ul {
-      display: flex;
+      display: flex;      
       list-style: none;
-      justify-content: center;
-      a {
+      
+      i, a {
         display: inline-block;
-        padding: 15px 25px;
+        padding: 5px 25px;
         text-decoration: none;
-        color: #000;
+        color: #6f727b;
        
+      }
+      i{
+        margin: auto;
+        color: #b9afa1;
+      }
+      h6{
+        color: #c0c1c5;
       }
     }
   }
