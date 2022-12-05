@@ -12,7 +12,7 @@ export default {
 <template>  
   <img :src="`/src/assets/imgSpa/${logo}`" alt="Logo" />
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
     img{
     height: 25px;
     width: auto;

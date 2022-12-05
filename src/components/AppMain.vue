@@ -1,6 +1,11 @@
 <script>
+import SectionTreatments from "./SectionTreatments.vue";
+
 export default {
   name: 'AppMain',
+  components:{
+    SectionTreatments,
+  }
 }
 </script>
 
@@ -35,6 +40,7 @@ export default {
       <div>Natural Beauty</div>
     </div>
   </div>
+  <SectionTreatments />
 </template>
 
 <style lang="scss" scoped>
@@ -91,6 +97,7 @@ export default {
   text-align: center;
   height: 120px;
   margin-top: 20px;
+  margin-bottom: 50px;
   i{
     color: #b9afa1;
     font-size: 40px;
