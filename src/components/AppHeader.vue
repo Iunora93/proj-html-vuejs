@@ -1,9 +1,11 @@
 <script>
 import AppLogo from "./AppLogo.vue";
+
 export default {
   name: 'AppHeader',
   components: {
     AppLogo,
+    
   },
   data() {
     return {
@@ -57,6 +59,7 @@ export default {
       </ul>
     </nav>
   </header>
+  
 </template>
 
 <style lang="scss">
