@@ -16,13 +16,15 @@ export default {
 </script>
 
 <template>
+
   <div class="container">
     <AppHeader />
-  </div>
-  
-<AppHero />
+  </div>  
+
+  <AppHero />
+
   <div class="container-small">
-    container small app vue
+    
   </div>
   <AppMain />
   <AppFooter />

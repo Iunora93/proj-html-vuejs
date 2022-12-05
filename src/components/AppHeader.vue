@@ -62,12 +62,12 @@ export default {
   
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 header {
   text-align: center;
   margin-bottom: 3.125rem;
   padding: 50px;
-  
+  margin: auto;
   .main-nav {
     display: flex;
     

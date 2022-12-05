@@ -12,12 +12,12 @@ export default {
     </div>    
   </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
     .hero{
     background-image: url(../assets/imgSpa/avada-spa-slider-image-1-new.jpg);
     padding: 50px 0 50px 0;
         .container{
-            padding-top: 300px;
+            padding-top: 350px;
             padding-bottom: 350px;
             color: white;
             text-align: center;
@@ -30,8 +30,12 @@ export default {
                     padding: 20px 50px;
                     border-radius: 50px;
                     background-color: #b9afa1;
-                    color: white;                   
+                    color: white;
+                    font-weight: bold;
                     font-size: 16px;
+                    &:hover{
+                      background-color: #33a7b9;
+                    }
                 }
         }
     }
