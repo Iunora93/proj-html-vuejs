@@ -60,6 +60,8 @@ export default {
     display: flex;
     margin: auto;
     justify-content: space-between;
+    text-align: left;
+    
   }
 }
 .footer-bottom{

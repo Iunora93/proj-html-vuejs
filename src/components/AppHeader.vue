@@ -11,12 +11,15 @@ export default {
     return {
       links: [
         {
+          icon: `<i class="fa-solid fa-feather"></i>`,
           href: "#",
           label: "TREATMENTS",
           info: 'Face & body',
         },
         {
           href: "#",
+          
+          icon: `<i class="fa-solid fa-person"></i>`,
           label: "ABOUT",
           info: 'Our Team',
         },
@@ -25,11 +28,13 @@ export default {
       lists: [
         {
           href: "#",
+          icon: `<i class="fa-solid fa-heart"></i>`,
           label: "JOURNAL",
           info: 'Tips & Tricks',
         },
         {
           href: "#",
+          icon: `<i class="fa-solid fa-bookmark"></i>`,
           label: "BOOK NOW",
           info: 'Special Offers',
         },   
@@ -44,7 +49,8 @@ export default {
     <nav class="main-nav">
       <ul>
         <i class="fa-solid fa-house-chimney"></i>
-        <li v-for="(item, index) in links">          
+        <li v-for="(item, index) in links">     
+          <span v-html="item.icon"></span>     
           <a :href="item.href">{{ item.label }}</a>
           <h6>{{item.info}}</h6>
         </li>
@@ -52,6 +58,7 @@ export default {
       <AppLogo />
       <ul>
         <li v-for="(item, index) in lists">
+          <span v-html="item.icon"></span>
           <a :href="item.href">{{ item.label }}</a>
           <h6>{{item.info}}</h6>
         </li>
@@ -74,6 +81,13 @@ header {
     ul {
       display: flex;      
       list-style: none;
+      li{
+        
+        span{
+          color: #b9afa1;
+          
+        }
+      }
       
       i, a {
         display: inline-block;
