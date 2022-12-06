@@ -10,48 +10,51 @@ export default {
 </script>
 
 <template>
-        <section>
-            <div class="card">
-                <img :src="img" :alt="title" />
-                <div class="info-card">
-                    <h3>{{ title }}</h3>
-                    <hr>
-                    <span>{{info}}</span>
+    
+            <main>
+                <div class="card">
+                    <img :src="img" :alt="title" />
+                    <div class="info-card">
+                        <h3>{{ title }}</h3>
+                        <hr>
+                        <span>{{info}}</span>
+                    </div>
                 </div>
-            </div>
-        </section>   
+            
+            </main>
 </template>
 
 <style lang="scss" scoped>
-    section{
+    main{
         display: flex;
-    
-    .card{       
-        width: calc(100% / 4);
-        img{
-            width: 100%;
-            height: auto;
-            border: 1px solid white;
-        }
-        h3{
+        .card{       
             
-            color: #b9afa1;
-        }
-        hr{
-            border-color: #b9afa1;  
-            margin: 10px 0 10px 0;         
-        }
-        span{
-            font-size: 12px;
-            color: #747474;
+            width: calc(100% / 4);
             
             
+            img{
+                width: 100%;
+                height: auto;
+                border: 1px solid white;
+            }
+            h3{
+                
+                color: #b9afa1;
+            }
+            hr{
+                border-color: #b9afa1;  
+                margin: 10px 0 10px 0;         
+            }
+            span{
+                font-size: 12px;
+                color: #747474;
+                
+                
+            }
+            .info-card{
+                padding: 20px;
+            }
         }
-        .info-card{
-            padding: 20px;
-        }
+
     }
-}
-
-
 </style>

@@ -47,9 +47,7 @@ export default {
     <h1>OUR TREATMENTS</h1>
   </div>
   <SectionCard />
-  <div class="bottom-treatments">
-    <h1>Take</h1>
-  </div>
+  
   
 </template>
 
@@ -128,10 +126,5 @@ export default {
     }
   }
 }
-.bottom-treatments{
-  background-image: url(../assets/imgSpa/ptb_cta-new.jpg);
-  padding: 50px;
-  color: white;
-  text-align: center;
-}
+
 </style>

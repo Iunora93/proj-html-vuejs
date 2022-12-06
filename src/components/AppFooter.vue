@@ -5,8 +5,16 @@ export default {
 </script>
 
 <template>
-  <h1>Footer</h1>
+  <div class="footer-top">
+    <h1>Take</h1>
+  </div>
 </template>
 
-<style>
+<style lang="scss" scoped>
+.footer-top{
+  background-image: url(../assets/imgSpa/ptb_cta-new.jpg);
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
 </style>
