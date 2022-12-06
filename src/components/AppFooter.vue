@@ -21,7 +21,7 @@ export default {
     <div class="footer-center">
       <div class="container offer">
         <div class="special-offer">25%</div>
-        <div>
+        <div class="discount">
           <h3>Take some time. Treat yourself. You deserve it.</h3>
           <span>Book a treatment this month and receive a 25% on all further treatments.</span>
         </div>
@@ -43,7 +43,7 @@ export default {
   color: white;
   text-align: center;
   .container-small{
-    padding: 0 100px;
+    
     h3{
       margin: 30px 0;
     }
@@ -61,7 +61,36 @@ export default {
     margin: auto;
     justify-content: space-between;
     text-align: left;
-    
+    .special-offer{
+      font-size: 50px;
+      border: 1px solid rgb(192, 175, 152);
+      padding: 10px 20px 20px 20px;
+      margin-right: 20px;
+    }
+    .discount{
+        margin: auto;
+        h3{
+          margin-bottom: 10px;
+        }
+        span{
+          font-size: 12px;
+        }
+      }
+  }
+  button{
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: none;
+    padding: 20px 50px;
+    border-radius: 50px;
+    background-color: #b9afa1;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    &:hover{
+    background-color: #33a7b9;
+    }
   }
 }
 .footer-bottom{
