@@ -1,6 +1,11 @@
 <script>
+import FooterBottom from "./FooterBottom.vue";
 export default {
   name: 'AppFooter',
+  components:{
+    FooterBottom,
+  },
+  
 }
 </script>
 
@@ -25,6 +30,7 @@ export default {
     </div>
 
     <div class="footer-bottom">
+     <FooterBottom /> 
     </div>
     
   </footer>
@@ -55,6 +61,11 @@ export default {
     margin: auto;
     justify-content: space-between;
   }
-
+}
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
 }
 </style>
