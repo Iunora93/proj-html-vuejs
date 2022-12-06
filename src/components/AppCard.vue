@@ -37,6 +37,7 @@ export default {
                 position: relative;
                 .on-hover{
                     color: white;
+                    font-size: 30px;
                     text-align: center;
                     position: absolute;                   
                     top: 0;
