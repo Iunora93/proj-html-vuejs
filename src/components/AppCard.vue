@@ -9,26 +9,21 @@ export default {
 };
 </script>
 
-<template>
-    
-            <main>
-                <div class="card">
-                    <img :src="img" :alt="title" />
-                    <div class="info-card">
-                        <h3>{{ title }}</h3>
-                        <hr>
-                        <span>{{info}}</span>
-                    </div>
-                </div>
-            
-            </main>
+<template>          
+    <div class="card">
+        <img :src="img" :alt="title" />
+        <div class="info-card">
+            <h3>{{ title }}</h3>
+            <hr>
+            <span>{{info}}</span>
+        </div>
+    </div>            
 </template>
 
 <style lang="scss" scoped>
-    main{
-        display: flex;
+    
         .card{       
-            
+            border: 1px solid #e1deda;
             width: calc(100% / 4);
             
             
@@ -42,7 +37,7 @@ export default {
                 color: #b9afa1;
             }
             hr{
-                border-color: #b9afa1;  
+                border-color: #e1deda;  
                 margin: 10px 0 10px 0;         
             }
             span{
@@ -56,5 +51,5 @@ export default {
             }
         }
 
-    }
+    
 </style>

@@ -126,5 +126,10 @@ export default {
     }
   }
 }
-
+.bottom-treatments{
+  background-image: url(../assets/imgSpa/ptb_cta-new.jpg);
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
 </style>

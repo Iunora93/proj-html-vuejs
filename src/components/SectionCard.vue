@@ -65,15 +65,21 @@ export default {
 </script>
 
 <template>
-<AppCard
+  <div>
+    <AppCard
         class="cards"
         v-for="card in cards"
         :img="card.src"
         :title="card.titolo"
         :info="card.info"
       />
+  </div>
 </template>
 
 <style lang="scss" scoped>
+div{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 </style>
